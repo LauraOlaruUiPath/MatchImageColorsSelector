@@ -3,12 +3,12 @@
     <x:Property Name="in_ApplicationPath" Type="InArgument(x:String)" />
     <x:Property Name="in_UiElement" Type="InArgument(ui:UiElement)" />
     <x:Property Name="in_ColorCode" Type="InArgument(x:String)" />
-    <x:Property Name="out_Match" Type="OutArgument(x:Boolean)" />
+    <x:Property sap2010:Annotation.AnnotationText="The match result between colors." Name="out_Match" Type="OutArgument(x:Boolean)" />
   </x:Members>
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1110,1212</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1110,1256</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Sequence_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="35">
@@ -95,10 +95,11 @@
       <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="MatchImageColorsSelector Sequence" sap:VirtualizedContainerService.HintSize="602,1147" sap2010:WorkflowViewState.IdRef="Sequence_6">
+  <Sequence sap2010:Annotation.AnnotationText="Uses a given application path and a given ui element from which it takes the screenshot's element pixels, in order to check if they match the given color code and it returns the match result as a boolean. " DisplayName="MatchImageColorsSelector Sequence" sap:VirtualizedContainerService.HintSize="602,1191" sap2010:WorkflowViewState.IdRef="Sequence_6">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="540,103" sap2010:WorkflowViewState.IdRef="LogMessage_8" Level="Info" Message="[&quot;Entered MatchImageColorsSelector&quot;]" />

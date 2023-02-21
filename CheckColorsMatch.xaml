@@ -1,10 +1,10 @@
 <Activity mc:Ignorable="sap sap2010" x:Class="CheckColorsMatch" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:ga="clr-namespace:GetPixelsFromImage.Activities;assembly=GetPixelsFromImage" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
-    <x:Property Name="in_UiElement" Type="InArgument(ui:UiElement)" />
-    <x:Property Name="in_ColorCode" Type="InArgument(x:String)" />
-    <x:Property Name="out_Match" Type="OutArgument(x:Boolean)" />
+    <x:Property sap2010:Annotation.AnnotationText="The given Ui element." Name="in_UiElement" Type="InArgument(ui:UiElement)" />
+    <x:Property sap2010:Annotation.AnnotationText="The given color code." Name="in_ColorCode" Type="InArgument(x:String)" />
+    <x:Property sap2010:Annotation.AnnotationText="The match result between colors." Name="out_Match" Type="OutArgument(x:Boolean)" />
   </x:Members>
-  <sap:VirtualizedContainerService.HintSize>1110,1046</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1110,1090</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="31">
@@ -87,14 +87,15 @@
       <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="546,981" sap2010:WorkflowViewState.IdRef="Sequence_16">
+  <Sequence sap2010:Annotation.AnnotationText="Checks if the ui element's color pixels match the given color code and it returns the match result as a boolean. " DisplayName="CheckColorsMatch Sequence" sap:VirtualizedContainerService.HintSize="546,1025" sap2010:WorkflowViewState.IdRef="Sequence_16">
     <Sequence.Variables>
-      <Variable x:TypeArguments="sd:Color[]" Name="Pixels" />
-      <Variable x:TypeArguments="x:String" Name="FilePath" />
+      <Variable x:TypeArguments="sd:Color[]" sap2010:Annotation.AnnotationText="The ui elements's pixels." Name="Pixels" />
+      <Variable x:TypeArguments="x:String" sap2010:Annotation.AnnotationText="The file path to the ui element's screenshot." Name="FilePath" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <uix:NTakeScreenshot DisplayName="Take Screenshot" FileName="screenshot.png" FileNameMode="None" sap:VirtualizedContainerService.HintSize="484,225" sap2010:WorkflowViewState.IdRef="NTakeScreenshot_1" InUiElement="[in_UiElement]" ScopeIdentifier="e932ff27-acc5-45b3-a364-624842c7dc8c" Version="V3">
