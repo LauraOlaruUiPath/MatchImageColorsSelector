@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "8Mwf3yY3tkPH1auMa1jozzafD4hfTq5bFATCbwRUci4IdZLZUsgfxZOBfk3raPumCBK/8h3ZOZlAYlwA0x7QTg==",
+  "dgSpecHash": "8kKnA9a7QDKBHtLuK+RdJPTVl3UcmUWclSi+ZShsMrJNqpKGsTeNwE6rHMh7RuhZKsmT41E8pgeMjNrdMfHgKQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\laura.olaru\\Documents\\UiPath\\MatchImageColorsSelector\\.local\\",
   "expectedPackageFiles": [
@@ -64,7 +64,8 @@
     "C:\\Users\\laura.olaru\\.nuget\\packages\\uipath.telemetry.client\\1.5.3\\uipath.telemetry.client.1.5.3.nupkg.sha512",
     "C:\\Users\\laura.olaru\\.nuget\\packages\\uipath.uiautomation.activities\\22.10.5\\uipath.uiautomation.activities.22.10.5.nupkg.sha512",
     "C:\\Users\\laura.olaru\\.nuget\\packages\\uipath.vision\\3.6.0\\uipath.vision.3.6.0.nupkg.sha512",
-    "C:\\Users\\laura.olaru\\.nuget\\packages\\uipathteam.getpixelsfromimage.activities\\1.0.1\\uipathteam.getpixelsfromimage.activities.1.0.1.nupkg.sha512"
+    "C:\\Users\\laura.olaru\\.nuget\\packages\\uipathteam.getpixelsfromimage.activities\\1.0.1\\uipathteam.getpixelsfromimage.activities.1.0.1.nupkg.sha512",
+    "C:\\Users\\laura.olaru\\.nuget\\packages\\uipathteam.imageactivities.activities\\3.1.1\\uipathteam.imageactivities.activities.3.1.1.nupkg.sha512"
   ],
   "logs": []
 }

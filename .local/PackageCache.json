@@ -114,6 +114,18 @@
         "C:\\Users\\laura.olaru\\.nuget\\packages\\uipathteam.getpixelsfromimage.activities\\1.0.1\\lib/GetPixelsFromImage.dll"
       ],
       "Path": "C:\\Users\\laura.olaru\\.nuget\\packages\\uipathteam.getpixelsfromimage.activities\\1.0.1"
+    },
+    {
+      "Package": {
+        "Id": "UiPathTeam.ImageActivities.Activities",
+        "Version": "3.1.1"
+      },
+      "Assemblies": [
+        "C:\\Users\\laura.olaru\\.nuget\\packages\\uipathteam.imageactivities.activities\\3.1.1\\lib/net461/ImageActivities.dll",
+        "C:\\Users\\laura.olaru\\.nuget\\packages\\uipathteam.imageactivities.activities\\3.1.1\\lib/net461/System.Drawing.Common.dll",
+        "C:\\Users\\laura.olaru\\.nuget\\packages\\uipathteam.imageactivities.activities\\3.1.1\\lib/net461/System.Drawing.Primitives.dll"
+      ],
+      "Path": "C:\\Users\\laura.olaru\\.nuget\\packages\\uipathteam.imageactivities.activities\\3.1.1"
     }
   ],
   "Conflicts": [],
@@ -922,6 +934,11 @@
       "Id": "UiPathTeam.GetPixelsFromImage.Activities",
       "Version": "1.0.1",
       "Dependencies": []
+    },
+    "UiPathTeam.ImageActivities.Activities": {
+      "Id": "UiPathTeam.ImageActivities.Activities",
+      "Version": "3.1.1",
+      "Dependencies": []
     }
   },
   "AllPackages": [
@@ -1550,6 +1567,18 @@
         "C:\\Users\\laura.olaru\\.nuget\\packages\\uipathteam.getpixelsfromimage.activities\\1.0.1\\lib\\GetPixelsFromImage.dll"
       ],
       "Path": "C:\\Users\\laura.olaru\\.nuget\\packages\\uipathteam.getpixelsfromimage.activities\\1.0.1"
+    },
+    {
+      "Package": {
+        "Id": "UiPathTeam.ImageActivities.Activities",
+        "Version": "3.1.1"
+      },
+      "Assemblies": [
+        "C:\\Users\\laura.olaru\\.nuget\\packages\\uipathteam.imageactivities.activities\\3.1.1\\lib\\net461\\ImageActivities.dll",
+        "C:\\Users\\laura.olaru\\.nuget\\packages\\uipathteam.imageactivities.activities\\3.1.1\\lib\\net461\\System.Drawing.Common.dll",
+        "C:\\Users\\laura.olaru\\.nuget\\packages\\uipathteam.imageactivities.activities\\3.1.1\\lib\\net461\\System.Drawing.Primitives.dll"
+      ],
+      "Path": "C:\\Users\\laura.olaru\\.nuget\\packages\\uipathteam.imageactivities.activities\\3.1.1"
     }
   ]
 }

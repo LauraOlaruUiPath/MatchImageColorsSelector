@@ -5,7 +5,8 @@
   "dependencies": {
     "UiPath.System.Activities": "22.10.4",
     "UiPath.UIAutomation.Activities": "22.10.5",
-    "UiPathTeam.GetPixelsFromImage.Activities": "1.0.1"
+    "UiPathTeam.GetPixelsFromImage.Activities": "1.0.1",
+    "UiPathTeam.ImageActivities.Activities": "3.1.1"
   },
   "webServices": [],
   "entitiesStores": [],
