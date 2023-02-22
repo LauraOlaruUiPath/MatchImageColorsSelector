@@ -107,16 +107,6 @@
     },
     {
       "Package": {
-        "Id": "UiPathTeam.GetPixelsFromImage.Activities",
-        "Version": "1.0.1"
-      },
-      "Assemblies": [
-        "C:\\Users\\laura.olaru\\.nuget\\packages\\uipathteam.getpixelsfromimage.activities\\1.0.1\\lib/GetPixelsFromImage.dll"
-      ],
-      "Path": "C:\\Users\\laura.olaru\\.nuget\\packages\\uipathteam.getpixelsfromimage.activities\\1.0.1"
-    },
-    {
-      "Package": {
         "Id": "UiPathTeam.ImageActivities.Activities",
         "Version": "3.1.1"
       },
@@ -930,11 +920,6 @@
         }
       ]
     },
-    "UiPathTeam.GetPixelsFromImage.Activities": {
-      "Id": "UiPathTeam.GetPixelsFromImage.Activities",
-      "Version": "1.0.1",
-      "Dependencies": []
-    },
     "UiPathTeam.ImageActivities.Activities": {
       "Id": "UiPathTeam.ImageActivities.Activities",
       "Version": "3.1.1",
@@ -1557,16 +1542,6 @@
         "C:\\Users\\laura.olaru\\.nuget\\packages\\uipath.vision\\3.6.0\\lib\\net461\\UiPath.Vision.dll"
       ],
       "Path": "C:\\Users\\laura.olaru\\.nuget\\packages\\uipath.vision\\3.6.0"
-    },
-    {
-      "Package": {
-        "Id": "UiPathTeam.GetPixelsFromImage.Activities",
-        "Version": "1.0.1"
-      },
-      "Assemblies": [
-        "C:\\Users\\laura.olaru\\.nuget\\packages\\uipathteam.getpixelsfromimage.activities\\1.0.1\\lib\\GetPixelsFromImage.dll"
-      ],
-      "Path": "C:\\Users\\laura.olaru\\.nuget\\packages\\uipathteam.getpixelsfromimage.activities\\1.0.1"
     },
     {
       "Package": {
