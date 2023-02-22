@@ -1,11 +1,11 @@
 {
-  "name": "MatchImageColorsSelector",
-  "description": "Checks whether a given image code matches the image of a given selector ui element and returns the boolean.",
+  "name": "ImagesColorsMatching",
+  "description": "Uses a given application card and a given ui element in order to check if its colors match the expected image's colors and it returns the match result as a boolean.",
   "main": "NewActivity.xaml",
   "dependencies": {
     "UiPath.System.Activities": "22.10.4",
     "UiPath.UIAutomation.Activities": "22.10.5",
-    "UiPathTeam.ImageActivities.Activities": "3.1.1"
+    "UiPathTeam.ImageActivities.Activities": "1.1.1"
   },
   "webServices": [],
   "entitiesStores": [],
@@ -34,7 +34,9 @@
     "outputType": "Library",
     "libraryOptions": {
       "includeOriginalXaml": false,
-      "privateWorkflows": []
+      "privateWorkflows": [
+        "CheckColorsMatch.xaml"
+      ]
     },
     "processOptions": {
       "ignoredFiles": []
@@ -46,5 +48,5 @@
   "isTemplate": false,
   "templateProjectData": {},
   "publishData": {},
-  "targetFramework": "Legacy"
+  "targetFramework": "Windows"
 }

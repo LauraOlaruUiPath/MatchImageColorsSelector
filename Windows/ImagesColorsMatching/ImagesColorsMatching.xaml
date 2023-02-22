@@ -1,17 +1,16 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Sequence" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Sequence" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property sap2010:Annotation.AnnotationText="The path to the desktop application." Name="ApplicationPath" Type="InArgument(x:String)" />
     <x:Property sap2010:Annotation.AnnotationText="The Ui element that is checked." Name="UiElement" Type="InArgument(ui:UiElement)" />
-    <x:Property sap2010:Annotation.AnnotationText="The color code that needs to match." Name="ColorCode" Type="InArgument(x:String)" />
     <x:Property sap2010:Annotation.AnnotationText="The match result between colors." Name="Match" Type="OutArgument(x:Boolean)" />
     <x:Property sap2010:Annotation.AnnotationText="The selector to the web or desktop application." Name="ApplicationSelector" Type="InArgument(x:String)" />
     <x:Property sap2010:Annotation.AnnotationText="The URL to the web application." Name="ApplicationURL" Type="InArgument(x:String)" />
     <x:Property sap2010:Annotation.AnnotationText="The file path to the expected image result." Name="ResultFilePath" Type="InArgument(x:String)" />
   </x:Members>
-  <mva:VisualBasic.Settings>
+  <VisualBasic.Settings>
     <x:Null />
-  </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1185,1287</sap:VirtualizedContainerService.HintSize>
+  </VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>1184.9999999999998,2052</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Sequence_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="35">
@@ -95,18 +94,24 @@
       <AssemblyReference>System.Linq.Async</AssemblyReference>
       <AssemblyReference>System.Linq.Async.Queryable</AssemblyReference>
       <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
-      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Uses a given application path and a given ui element from which it takes the screenshot's element pixels, in order to check if they match the given color code and it returns the match result as a boolean. " DisplayName="MatchImageColorsSelector Sequence" sap:VirtualizedContainerService.HintSize="1187,1222" sap2010:WorkflowViewState.IdRef="Sequence_6">
+  <Sequence sap2010:Annotation.AnnotationText="Uses a given application card and a given ui element from which it takes the screenshot's element pixels, in order to check if they match the given image path's color code and it returns the match result as a boolean. " DisplayName="ImagesColorsMatching Sequence" sap:VirtualizedContainerService.HintSize="684,1987" sap2010:WorkflowViewState.IdRef="Sequence_6">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1125,103" sap2010:WorkflowViewState.IdRef="LogMessage_8" Level="Info" Message="[&quot;Entered MatchImageColorsSelector&quot;]" />
-    <If Condition="[String.IsNullOrEmpty(ApplicationPath)]" DisplayName="If it is an web appplication" sap:VirtualizedContainerService.HintSize="1125,926" sap2010:WorkflowViewState.IdRef="If_1">
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="622,103" sap2010:WorkflowViewState.IdRef="LogMessage_8" Level="Info" Message="[&quot;Entered MatchImageColorsSelector&quot;]" />
+    <If Condition="[String.IsNullOrEmpty(ApplicationPath)]" DisplayName="If it is an web appplication" sap:VirtualizedContainerService.HintSize="622,1678" sap2010:WorkflowViewState.IdRef="If_1">
       <If.Then>
         <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Web Application/Browser" sap:VirtualizedContainerService.HintSize="540,756" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" ScopeGuid="dd192be1-0dcd-43c4-8bf4-c196f8d1a8f3" Version="V2">
           <uix:NApplicationCard.Body>
@@ -131,16 +136,13 @@
                       <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Web CheckColorsMatch.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="338,123" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="CheckColorsMatch.xaml">
                         <ui:InvokeWorkflowFile.Arguments>
                           <InArgument x:TypeArguments="ui:UiElement" x:Key="in_UiElement">
-                            <mva:VisualBasicValue x:TypeArguments="ui:UiElement" ExpressionText="UiElement" />
-                          </InArgument>
-                          <InArgument x:TypeArguments="x:String" x:Key="in_ColorCode">
-                            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="ColorCode" />
+                            <VisualBasicValue x:TypeArguments="ui:UiElement" ExpressionText="UiElement" />
                           </InArgument>
                           <OutArgument x:TypeArguments="x:Boolean" x:Key="out_Match">
-                            <mva:VisualBasicReference x:TypeArguments="x:Boolean" ExpressionText="Match" />
+                            <VisualBasicReference x:TypeArguments="x:Boolean" ExpressionText="Match" />
                           </OutArgument>
                           <InArgument x:TypeArguments="x:String" x:Key="in_ResultFilePath">
-                            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="ResultFilePath" />
+                            <VisualBasicValue x:TypeArguments="x:String" ExpressionText="ResultFilePath" />
                           </InArgument>
                         </ui:InvokeWorkflowFile.Arguments>
                       </ui:InvokeWorkflowFile>
@@ -188,16 +190,13 @@
                       <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Desktop CheckColorsMatch.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="338,123" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="CheckColorsMatch.xaml">
                         <ui:InvokeWorkflowFile.Arguments>
                           <InArgument x:TypeArguments="ui:UiElement" x:Key="in_UiElement">
-                            <mva:VisualBasicValue x:TypeArguments="ui:UiElement" ExpressionText="UiElement" />
-                          </InArgument>
-                          <InArgument x:TypeArguments="x:String" x:Key="in_ColorCode">
-                            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="ColorCode" />
+                            <VisualBasicValue x:TypeArguments="ui:UiElement" ExpressionText="UiElement" />
                           </InArgument>
                           <OutArgument x:TypeArguments="x:Boolean" x:Key="out_Match">
-                            <mva:VisualBasicReference x:TypeArguments="x:Boolean" ExpressionText="Match" />
+                            <VisualBasicReference x:TypeArguments="x:Boolean" ExpressionText="Match" />
                           </OutArgument>
                           <InArgument x:TypeArguments="x:String" x:Key="in_ResultFilePath">
-                            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="ResultFilePath" />
+                            <VisualBasicValue x:TypeArguments="x:String" ExpressionText="ResultFilePath" />
                           </InArgument>
                         </ui:InvokeWorkflowFile.Arguments>
                       </ui:InvokeWorkflowFile>
